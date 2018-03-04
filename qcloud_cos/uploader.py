@@ -38,12 +38,13 @@ class Uploader(object):
             self.write_markdown_picture_url(file_url)
 
     def write_markdown_picture_url(self, file_url):
+        markdown_picture_url = '![]({})'.format(file_url)
         platform = sys.platform
         command = ''
         if platform == 'win32':
-            command = 'echo {} | clip'.format(file_url)
+            command = 'echo {} | clip'.format(markdown_picture_url)
         elif platform == 'darwin':
-            command = 'echo "{}" | pbcopy'.format(file_url)
+            command = 'echo "{}" | pbcopy'.format(markdown_picture_url)
         os.system(command)
-        print file_url
+        print markdown_picture_url
         print('the url is already in your clipboard!')
