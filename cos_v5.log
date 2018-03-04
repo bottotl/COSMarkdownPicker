@@ -1,0 +1,2 @@
+Sun, 04 Mar 2018 13:33:31 cos_client.py[line:74] INFO config parameter-> appid: None, region: ap-shanghai
+Sun, 04 Mar 2018 13:33:31 cos_client.py[line:201] INFO put object, url=:http://markdown-1254413962.cos.ap-shanghai.myqcloud.com/2018-03-04-13-33-31.png ,headers=:{'Content-Disposition': 'download.txt', 'x-cos-storage-class': 'STANDARD', 'Cache-Control': 'no-cache'}
