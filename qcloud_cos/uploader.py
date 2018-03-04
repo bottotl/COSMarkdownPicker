@@ -33,4 +33,16 @@ class Uploader(object):
                 CacheControl='no-cache',
                 ContentDisposition='download.txt'
             )
-            print response['ETag']
+            file_url = 'http://' + bucket + '.cossh.myqcloud.com/' + file_name
+            self.write_markdown_picture_url(file_url)
+
+    def write_markdown_picture_url(self, file_url):
+        platform = sys.platform
+        command = ''
+        if platform == 'win32':
+            command = 'echo {} | clip'.format(file_url)
+        elif platform == 'darwin':
+            command = 'echo "{}" | pbcopy'.format(file_url)
+        os.system(command)
+        print file_url
+        print('the url is already in your clipboard!')
