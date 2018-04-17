@@ -17,9 +17,20 @@ bucket= '????'  # Bucket由bucketname-appid组成
 
 token = ''      # 使用临时秘钥需要传入Token，默认为空,可不填
   
-### 2.Install cos-python-sdk
+### 2.Install tools
 
+step 1: `pngpaste`
+
+brew install pngpaste
+
+step 2: [cos-python-sdk](https://github.com/tencentyun/cos-python-sdk-v5)
+
+使用pip安装
 pip install -U cos-python-sdk-v5
+
+手动安装:
+download [cos-python-sdk](https://github.com/tencentyun/cos-python-sdk-v5)
+python setup.py install
 
 ## how to use
 
