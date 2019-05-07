@@ -16,7 +16,11 @@ region = '????'    # 替换为用户的region
 bucket= '????'  # Bucket由bucketname-appid组成
 
 token = ''      # 使用临时秘钥需要传入Token，默认为空,可不填
-  
+
+![](http://jft0m-1254413962.cossh.myqcloud.com/2019-05-07-15-29-59.png)
+ 
+![](http://jft0m-1254413962.cossh.myqcloud.com/2019-05-07-15-28-15.png)
+
 ### 2.Install tools
 
 step 1: `pngpaste`
